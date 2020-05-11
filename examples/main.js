@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import WklUI from '../components/index'
-import '../components/style'
+
+/* 按需引入 */
+import WklUI from 'wkl-ui/lib/wkl-ui.umd'
 
 Vue.use(WklUI)
 
