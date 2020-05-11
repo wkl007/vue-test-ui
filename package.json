@@ -1,0 +1,56 @@
+{
+  "name": "wkl-ui",
+  "version": "0.1.0",
+  "description": "wkl ui 框架",
+  "keywords": [
+    "wkl",
+    "ui",
+    "wkl-ui"
+  ],
+  "bugs": {
+    "url": "https://github.com/wkl007/wkl-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wkl007/wkl-ui"
+  },
+  "main": "lib/wkl-ui.umd.min.js",
+  "license": "MIT",
+  "author": "wkl007",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name wkl-ui --dest lib components/index.js",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-unit-jest": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "sideEffects": [
+    "components/style.js",
+    "components/**/style/*",
+    "*.vue",
+    "*.md",
+    "lib/**/style/*",
+    "*.less"
+  ]
+}
